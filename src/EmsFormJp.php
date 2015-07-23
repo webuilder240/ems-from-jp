@@ -51,12 +51,7 @@ class EmsFromJp
             case $weight <= 5500:
                 return 6500;
             case $weight <= 30000:
-				$price_scale = 800;
-				$base_price = 7000;
-				$base_weight = 6000;
-				$weight_scale = 1000;
-				$w = ceil(($weight - $base_weight) / $weight_scale);
-				return $base_price + ($w * $price_scale);
+                return self::returnCost($weight,800,7000,6000,1000);
             default:
                 return 0;
         }
@@ -106,12 +101,7 @@ class EmsFromJp
             case $weight <= 5500:
                 return 8900;
             case $weight <= 30000:
-				$price_scale = 1100;
-				$base_price = 9600;
-				$base_weight = 6000;
-				$weight_scale = 1000;
-				$w = ceil(($weight - $base_weight) / $weight_scale);
-				return $base_price + ($w * $price_scale);
+                return self::returnCost($weight,1100,9600,6000,1000);
             default:
                 return 0;
         }
@@ -161,12 +151,7 @@ class EmsFromJp
             case $weight <= 5500:
                 return 10200;
             case $weight <= 30000:
-				$price_scale = 1300;
-				$base_price = 11000;
-				$base_weight = 6000;
-				$weight_scale = 1000;
-				$w = ceil(($weight - $base_weight) / $weight_scale);
-				return $base_price + ($w * $price_scale);
+                return self::returnCost($weight,1300,11000,6000,1000);
             default:
                 return 0;
         }
@@ -216,14 +201,15 @@ class EmsFromJp
             case $weight <= 5500:
                 return 17500;
             case $weight <= 30000:
-				$price_scale = 2100;
-				$base_price = 19000;
-				$base_weight = 6000;
-				$weight_scale = 1000;
-				$w = ceil(($weight - $base_weight) / $weight_scale);
-				return $base_price + ($w * $price_scale);
+                return self::returnCost($weight,2100,19000,6000,1000);
             default:
                 return 0;
         }
+    }
+
+    private static function returnCost($weight, $price_scale, $base_price, $base_weight, $weight_scale)
+    {
+        $w = ceil(($weight - $base_weight) / $weight_scale);
+        return $base_price + ($w * $price_scale);
     }
 }
