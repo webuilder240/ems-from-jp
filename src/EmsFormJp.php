@@ -74,20 +74,8 @@ class EmsFromJp
                 return 3600;
             case $weight <= 2000:
                 return 4000;
-            case $weight <= 2500:
-                return 4700;
-            case $weight <= 3000:
-                return 5400;
-            case $weight <= 3500:
-                return 6100;
-            case $weight <= 4000:
-                return 6800;
-            case $weight <= 4500:
-                return 7500;
-            case $weight <= 5000:
-                return 8200;
             case $weight <= 5500:
-                return 8900;
+                return self::returnCost($weight,700,4700,2500,500);
             case $weight <= 30000:
                 return self::returnCost($weight,1100,9600,6000,1000);
             default:
@@ -124,20 +112,8 @@ class EmsFromJp
                 return 4150;
             case $weight <= 2000:
                 return 4600;
-            case $weight <= 2500:
-                return 5400;
-            case $weight <= 3000:
-                return 6200;
-            case $weight <= 3500:
-                return 7000;
-            case $weight <= 4000:
-                return 7800;
-            case $weight <= 4500:
-                return 8600;
-            case $weight <= 5000:
-                return 9400;
             case $weight <= 5500:
-                return 10200;
+                return self::returnCost($weight,800,5400,2500,500);
             case $weight <= 30000:
                 return self::returnCost($weight,1300,11000,6000,1000);
             default:
@@ -174,20 +150,8 @@ class EmsFromJp
                 return 6200;
             case $weight <= 2000:
                 return 7000;
-            case $weight <= 2500:
-                return 8500;
-            case $weight <= 3000:
-                return 10000;
-            case $weight <= 3500:
-                return 11500;
-            case $weight <= 4000:
-                return 13000;
-            case $weight <= 4500:
-                return 14500;
-            case $weight <= 5000:
-                return 16000;
             case $weight <= 5500:
-                return 17500;
+                return self::returnCost($weight,1500,8500,2500,500);
             case $weight <= 30000:
                 return self::returnCost($weight,2100,19000,6000,1000);
             default:
