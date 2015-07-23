@@ -228,7 +228,7 @@ class EmsFromJpTest extends PHPUnit_Framework_TestCase
                 710,
                 800,
             ],
-            2200 => [
+            2220 => [
                 810,
                 900,
             ],
