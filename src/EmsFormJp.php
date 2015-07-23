@@ -36,20 +36,8 @@ class EmsFromJp
                 return 2700;
             case $weight <= 2000:
                 return 3000;
-            case $weight <= 2500:
-                return 3500;
-            case $weight <= 3000:
-                return 4000;
-            case $weight <= 3500:
-                return 4500;
-            case $weight <= 4000:
-                return 5000;
-            case $weight <= 4500:
-                return 5500;
-            case $weight <= 5000:
-                return 6000;
             case $weight <= 5500:
-                return 6500;
+                return self::returnCost($weight,500,3500,2500,500);
             case $weight <= 30000:
                 return self::returnCost($weight,800,7000,6000,1000);
             default:
