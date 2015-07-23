@@ -50,56 +50,13 @@ class EmsFromJp
                 return 6000;
             case $weight <= 5500:
                 return 6500;
-            case $weight <= 6000:
-                return 7000;
-            case $weight <= 7000:
-                return 7800;
-            case $weight <= 8000:
-                return 8600;
-            case $weight <= 9000:
-                return 9400;
-            case $weight <= 10000:
-                return 10200;
-            case $weight <= 11000:
-                return 11000;
-            case $weight <= 12000:
-                return 11800;
-            case $weight <= 13000:
-                return 12600;
-            case $weight <= 14000:
-                return 13400;
-            case $weight <= 15000:
-                return 14200;
-            case $weight <= 16000:
-                return 15000;
-            case $weight <= 17000:
-                return 15800;
-            case $weight <= 18000:
-                return 16600;
-            case $weight <= 19000:
-                return 17400;
-            case $weight <= 20000:
-                return 18200;
-            case $weight <= 21000:
-                return 19000;
-            case $weight <= 22000:
-                return 19800;
-            case $weight <= 23000:
-                return 20600;
-            case $weight <= 24000:
-                return 21400;
-            case $weight <= 25000:
-                return 22200;
-            case $weight <= 26000:
-                return 23000;
-            case $weight <= 27000:
-                return 23800;
-            case $weight <= 28000:
-                return 24600;
-            case $weight <= 29000:
-                return 25400;
             case $weight <= 30000:
-                return 26200;
+				$price_scale = 800;
+				$base_price = 7000;
+				$base_weight = 6000;
+				$weight_scale = 1000;
+				$w = ceil(($weight - $base_weight) / $weight_scale);
+				return $base_price + ($w * $price_scale);
             default:
                 return 0;
         }
@@ -148,56 +105,13 @@ class EmsFromJp
                 return 8200;
             case $weight <= 5500:
                 return 8900;
-            case $weight <= 6000:
-                return 9600;
-            case $weight <= 7000:
-                return 10700;
-            case $weight <= 8000:
-                return 11800;
-            case $weight <= 9000:
-                return 12900;
-            case $weight <= 10000:
-                return 14000;
-            case $weight <= 11000:
-                return 15100;
-            case $weight <= 12000:
-                return 16200;
-            case $weight <= 13000:
-                return 17300;
-            case $weight <= 14000:
-                return 18400;
-            case $weight <= 15000:
-                return 19500;
-            case $weight <= 16000:
-                return 20600;
-            case $weight <= 17000:
-                return 21700;
-            case $weight <= 18000:
-                return 22800;
-            case $weight <= 19000:
-                return 23900;
-            case $weight <= 20000:
-                return 25000;
-            case $weight <= 21000:
-                return 26100;
-            case $weight <= 22000:
-                return 27200;
-            case $weight <= 23000:
-                return 28300;
-            case $weight <= 24000:
-                return 29400;
-            case $weight <= 25000:
-                return 30500;
-            case $weight <= 26000:
-                return 31600;
-            case $weight <= 27000:
-                return 32700;
-            case $weight <= 28000:
-                return 33800;
-            case $weight <= 29000:
-                return 34900;
             case $weight <= 30000:
-                return 36000;
+				$price_scale = 1100;
+				$base_price = 9600;
+				$base_weight = 6000;
+				$weight_scale = 1000;
+				$w = ceil(($weight - $base_weight) / $weight_scale);
+				return $base_price + ($w * $price_scale);
             default:
                 return 0;
         }
@@ -246,56 +160,13 @@ class EmsFromJp
                 return 9400;
             case $weight <= 5500:
                 return 10200;
-            case $weight <= 6000:
-                return 11000;
-            case $weight <= 7000:
-                return 12300;
-            case $weight <= 8000:
-                return 13600;
-            case $weight <= 9000:
-                return 14900;
-            case $weight <= 10000:
-                return 16200;
-            case $weight <= 11000:
-                return 17500;
-            case $weight <= 12000:
-                return 18800;
-            case $weight <= 13000:
-                return 20100;
-            case $weight <= 14000:
-                return 21400;
-            case $weight <= 15000:
-                return 22700;
-            case $weight <= 16000:
-                return 24000;
-            case $weight <= 17000:
-                return 25300;
-            case $weight <= 18000:
-                return 26600;
-            case $weight <= 19000:
-                return 27900;
-            case $weight <= 20000:
-                return 29200;
-            case $weight <= 21000:
-                return 30500;
-            case $weight <= 22000:
-                return 31800;
-            case $weight <= 23000:
-                return 33100;
-            case $weight <= 24000:
-                return 34400;
-            case $weight <= 25000:
-                return 35700;
-            case $weight <= 26000:
-                return 37000;
-            case $weight <= 27000:
-                return 38300;
-            case $weight <= 28000:
-                return 39600;
-            case $weight <= 29000:
-                return 40900;
             case $weight <= 30000:
-                return 42200;
+				$price_scale = 1300;
+				$base_price = 11000;
+				$base_weight = 6000;
+				$weight_scale = 1000;
+				$w = ceil(($weight - $base_weight) / $weight_scale);
+				return $base_price + ($w * $price_scale);
             default:
                 return 0;
         }
@@ -344,56 +215,13 @@ class EmsFromJp
                 return 16000;
             case $weight <= 5500:
                 return 17500;
-            case $weight <= 6000:
-                return 19000;
-            case $weight <= 7000:
-                return 21100;
-            case $weight <= 8000:
-                return 23200;
-            case $weight <= 9000:
-                return 25300;
-            case $weight <= 10000:
-                return 27400;
-            case $weight <= 11000:
-                return 29500;
-            case $weight <= 12000:
-                return 31600;
-            case $weight <= 13000:
-                return 33700;
-            case $weight <= 14000:
-                return 35800;
-            case $weight <= 15000:
-                return 37900;
-            case $weight <= 16000:
-                return 40000;
-            case $weight <= 17000:
-                return 42100;
-            case $weight <= 18000:
-                return 44200;
-            case $weight <= 19000:
-                return 46300;
-            case $weight <= 20000:
-                return 48400;
-            case $weight <= 21000:
-                return 50500;
-            case $weight <= 22000:
-                return 52600;
-            case $weight <= 23000:
-                return 54700;
-            case $weight <= 24000:
-                return 56800;
-            case $weight <= 25000:
-                return 58900;
-            case $weight <= 26000:
-                return 61000;
-            case $weight <= 27000:
-                return 63100;
-            case $weight <= 28000:
-                return 65200;
-            case $weight <= 29000:
-                return 67300;
             case $weight <= 30000:
-                return 69400;
+				$price_scale = 2100;
+				$base_price = 19000;
+				$base_weight = 6000;
+				$weight_scale = 1000;
+				$w = ceil(($weight - $base_weight) / $weight_scale);
+				return $base_price + ($w * $price_scale);
             default:
                 return 0;
         }
