@@ -1,0 +1,23 @@
+{
+  "name": "webuilder240/ems-from-jp",
+  "description": "ems from japan price table Library for php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nishio Takuya",
+      "email": "littlecub240@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+	"satooshi/php-coveralls": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
+}
