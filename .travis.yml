@@ -10,9 +10,8 @@ php:
 
 script:
   - mkdir -p build/logs
-  - phpunit --coverage-clover build/logs/coverage.clover --configuration phpunit.xml.dist
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --access-token="46bd354b8b884012d3a50fdd2de488ee812f037c237ccc00d6da00d0ad89db54" --format=php-clover build/logs/coverage.clover
+  - phpunit --coverage-clover build/logs/coverage.xml --configuration phpunit.xml.dist
 
 after_script:
-  - php vendor/bin/coveralls -v
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --access-token="46bd354b8b884012d3a50fdd2de488ee812f037c237ccc00d6da00d0ad89db54" --format=php-clover build/logs/coverage.xml
