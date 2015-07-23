@@ -1,5 +1,5 @@
 # Ems From Japan Price Table Library
-[![Coverage Status](https://coveralls.io/repos/webuilder240/ems-from-jp/badge.svg?branch=master&service=github)] (https://coveralls.io/github/webuilder240/ems-from-jp?branch=master) [![Build Status](https://travis-ci.org/webuilder240/ems-from-jp.svg?branch=master)] (https://travis-ci.org/webuilder240/ems-from-jp) [![Latest Stable Version](https://poser.pugx.org/webuilder240/ems-from-jp/v/stable)](https://packagist.org/packages/webuilder240/ems-from-jp) [![License](https://poser.pugx.org/webuilder240/ems-from-jp/license)](https://packagist.org/packages/webuilder240/ems-from-jp)
+[![Code Coverage](https://scrutinizer-ci.com/g/webuilder240/ems-from-jp/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/webuilder240/ems-from-jp/?branch=master) [![Build Status](https://travis-ci.org/webuilder240/ems-from-jp.svg?branch=master)] (https://travis-ci.org/webuilder240/ems-from-jp) [![Latest Stable Version](https://poser.pugx.org/webuilder240/ems-from-jp/v/stable)](https://packagist.org/packages/webuilder240/ems-from-jp) [![License](https://poser.pugx.org/webuilder240/ems-from-jp/license)](https://packagist.org/packages/webuilder240/ems-from-jp)
 
 ## Install
 
